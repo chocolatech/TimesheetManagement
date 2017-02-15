@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import './App.css';
+import {Home} from './components/home.component.js';
 
 class App extends Component {
   render () {
@@ -19,7 +20,6 @@ class App extends Component {
   }
 }
 
-const Home = () => <h1>Hello from Home!</h1>
 const Address = (props) => <div>
   <br />
   <Link to='/address'>Twitter Feed</Link>&nbsp;
