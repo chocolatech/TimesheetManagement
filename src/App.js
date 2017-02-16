@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import './App.css';
 import {Home} from './components/home.component.js';
+import {NotFound} from './components/404.component.js';
 
 class App extends Component {
   render () {
@@ -27,8 +28,6 @@ const Address = (props) => <div>
   <h1>We are located at 555 Jackson St.</h1>
   {props.children}
 </div>
-const NotFound = () => (
-  <h1>404.. This page is not found!</h1>)
 
 const Nav = () => (
   <div>
