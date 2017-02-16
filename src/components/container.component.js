@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TopNav} from './topNav.component';
+import TopNav from './topNav.component';
 
 export default class Container extends Component {
     render() {
@@ -10,6 +10,3 @@ export default class Container extends Component {
         )
     }
 }
-
-// const Container = (props) => <div>     <TopNav/> {this.props.children} </div>
-// export default Container;
