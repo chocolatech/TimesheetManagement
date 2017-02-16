@@ -1,10 +1,5 @@
-import React, { Component } from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
-import './App.css';
-import {Home} from './components/home.component.js';
-import {NotFound} from './components/404.component.js';
-import {Container} from './components/container.component.js';
-import {TopNav} from './components/topNav.component';
+import React, { Component } from 'react'
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute } from 'react-router'
 
 class App extends Component {
   render () {
@@ -23,6 +18,20 @@ class App extends Component {
   }
 }
 
+const Nav = () => (
+  <div>
+    <Link to='/'>Home</Link>&nbsp;
+    <Link to='/address'>Address</Link>
+  </div>
+)
+
+const Container = (props) => <div>
+  <Nav />
+  {props.children}
+</div>
+
+const Home = () => <h1>Hello from Home!</h1>
+
 const Address = (props) => <div>
   <br />
   <Link to='/address'>Twitter Feed</Link>&nbsp;
@@ -31,8 +40,9 @@ const Address = (props) => <div>
   {props.children}
 </div>
 
-
 const Instagram = () => <h3>Instagram Feed</h3>
 const TwitterFeed = () => <h3>Twitter Feed</h3>
 
-export default App;
+const NotFound = () => <h1>404.. This page is not found!</h1>
+
+export default App

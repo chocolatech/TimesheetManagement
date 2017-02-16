@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {TopNav} from './topNav.component';
 
-export default class Container extends React.Component {
+export default class Container extends Component {
     render() {
         return (
             <div>
