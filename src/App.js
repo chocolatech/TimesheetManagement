@@ -3,6 +3,8 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 're
 import './App.css';
 import {Home} from './components/home.component.js';
 import {NotFound} from './components/404.component.js';
+import {Container} from './components/container.component.js';
+import {TopNav} from './components/topNav.component';
 
 class App extends Component {
   render () {
@@ -29,15 +31,6 @@ const Address = (props) => <div>
   {props.children}
 </div>
 
-const Nav = () => (
-  <div>
-    <Link to='/'>Home</Link>&nbsp;
-    <Link to='/address'>Address</Link>
-  </div>)
-const Container = (props) => <div>
-  <Nav />
-  {props.children}
-</div>
 
 const Instagram = () => <h3>Instagram Feed</h3>
 const TwitterFeed = () => <h3>Twitter Feed</h3>
