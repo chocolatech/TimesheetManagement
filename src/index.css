@@ -1,6 +1,10 @@
 @import "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css";
+html {
+    height: 100%;
+}
 body {
     overflow-x: hidden;
+    height: 100%;
 }
 .clear-margin-bottom {
     margin-bottom: 0;
