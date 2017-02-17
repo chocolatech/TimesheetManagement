@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const TopNav = () => (
-    <nav className="navbar navbar-inverse">
+    <nav className="navbar navbar-inverse clear-margin-bottom">
     <div className="container-fluid">
       <div className="navbar-header">
         <Link to='/' className="navbar-brand">Timesheet Management</Link>
