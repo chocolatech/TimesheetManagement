@@ -2,11 +2,17 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const TopNav = () => (
-    <div>
-        <Link to='/'>Home</Link>&nbsp;
-        <Link to='/address'>Address</Link>
-        <a href="#" className="btn btn-primary">Primary</a>
+    <nav className="navbar navbar-inverse">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <Link to='/' className="navbar-brand">Timesheet Management</Link>
+      </div>
+      <ul className="nav navbar-nav navbar-right">
+        <li><a href="#">Hello, USERNAME!</a></li>
+        <li><Link to='/address'>Log out</Link></li>
+      </ul>
     </div>
+  </nav>
 )
 
 export default TopNav;
