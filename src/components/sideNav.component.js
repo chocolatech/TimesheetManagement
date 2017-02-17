@@ -7,9 +7,6 @@ const SideNav = () => (
         <div id="sidebar-wrapper">
             <ul className="sidebar-nav">
                 <li className="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
                 </li>
                 <li>
                     <a href="#">Your teams</a>
