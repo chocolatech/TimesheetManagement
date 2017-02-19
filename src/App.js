@@ -11,10 +11,7 @@ class App extends Component {
       <Router history={hashHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Home} />
-          <Route component={PageContent}>
-            <Route path='address' component={Address}>
-            </Route>
-          </Route>
+            <Route path='address' component={Address}/>
           <Route path='*' component={NotFound} />
         </Route>
       </Router>
