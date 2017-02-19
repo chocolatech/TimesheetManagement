@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 import '../styles/sideNav.css';
 
 const Home = () => (

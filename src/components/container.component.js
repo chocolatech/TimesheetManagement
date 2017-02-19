@@ -7,9 +7,9 @@ export default class Container extends Component {
     render() {
         return (
             <div>
-                <TopNav/> {this.props.children}
-                <SideNav/> {this.props.children}
-                <PageContent/> {this.props.children}
+                <TopNav/> 
+                <SideNav/> 
+                <PageContent children={this.props.children}/> 
             </div>
         )
     }
