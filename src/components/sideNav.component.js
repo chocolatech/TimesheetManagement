@@ -9,13 +9,13 @@ const SideNav = () => (
                 <li className="sidebar-brand">
                 </li>
                 <li>
-                    <a href="#">Your teams</a>
+                    <Link to='/teams'>Your teams</Link>
                 </li>
                 <li>
-                    <a href="#">Your clouds</a>
+                    <Link to='/clouds'>Your clouds</Link>
                 </li>
                 <li>
-                    <a href="#">Your timesheets</a>
+                    <Link to='/timesheets'>Your timesheets</Link>
                 </li>
                 <li>
                     <a href="#">Help</a>
