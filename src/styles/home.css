@@ -1,0 +1,34 @@
+.rounded {
+  border-radius: 20px;
+  color: white;
+  height: 120px;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.home-padding {
+    padding-top: 30px;
+}
+.yellow-button {
+    background: #FF9900;
+}
+.blue-button {
+    background: #2B78E4;
+}
+.red-button {
+    background: #CF2A27;
+}
+.button-label{
+    text-align: center;
+    display: block;
+}
+.yellow-label{
+    color: #FF9900;
+}
+.blue-label{
+    color: #2B78E4;
+}
+.red-label {
+    color: #CF2A27;
+}
