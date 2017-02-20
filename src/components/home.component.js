@@ -10,11 +10,11 @@ const Home = () => (
         </div>
         <div className="col-md-2">
             <p className="rounded blue-button">0</p>
-            <label htmlFor="blue-button" className="button-label blue-label">Your teams</label>
+            <label htmlFor="blue-button" className="button-label blue-label">Your clouds</label>
         </div>
         <div className="col-md-2">
             <p className="rounded red-button">0</p>
-            <label htmlFor="red-button" className="button-label red-label">Your teams</label>
+            <label htmlFor="red-button" className="button-label red-label">Your timesheets</label>
         </div>
     </div >
 )
