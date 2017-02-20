@@ -3,7 +3,7 @@ import '../styles/sideNav.css';
 import '../styles/home.css';
 
 const Home = () => (
-    <div className="row">
+    <div className="row home-padding">
         <div className="col-md-2">
             <p className="rounded yellow-button">0</p>
             <label htmlFor="yellow-button" className="button-label yellow-label">Your teams</label>
