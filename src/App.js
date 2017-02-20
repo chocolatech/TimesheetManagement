@@ -6,6 +6,7 @@ import Container from './components/container.component';
 import Teams from './components/teams.component';
 import Clouds from './components/clouds.component';
 import Timesheets from './components/timesheets.component';
+import Help from './components/help.component';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
           <Route path='teams' component={Teams}></Route>
           <Route path='clouds' component={Clouds}></Route>
           <Route path='timesheets' component={Timesheets}></Route>
-
+          <Route path='help' component={Help}></Route>
           <Route path='*' component={NotFound} />
         </Route>
       </Router>

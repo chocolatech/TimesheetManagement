@@ -18,7 +18,7 @@ const SideNav = () => (
                     <Link to='/timesheets'>Your timesheets</Link>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <Link to='/help'>Help</Link>
                 </li>
             </ul>
         </div>
