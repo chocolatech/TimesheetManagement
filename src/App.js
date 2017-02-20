@@ -3,7 +3,6 @@ import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
 import Home from './components/home.component'
 import NotFound from './components/404.component'
 import Container from './components/container.component';
-import PageContent from './components/pageContent.component';
 
 class App extends Component {
   render() {
