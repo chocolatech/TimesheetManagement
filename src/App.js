@@ -13,7 +13,6 @@ class App extends Component {
       <Router history={hashHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Home} />
-          <Route path='address' component={Address} />
           <Route path='teams' component={Teams}></Route>
           <Route path='clouds' component={Clouds}></Route>
           <Route path='timesheets' component={Timesheets}></Route>
@@ -25,11 +24,4 @@ class App extends Component {
   }
 }
 
-const Address = (props) => <div>
-  <br />
-  {/*<Link to='/address'>Twitter Feed</Link>&nbsp;
-  <Link to='/address/instagram'>Instagram Feed</Link>*/}
-  <h1>We are located at 555 Jackson St.</h1>
-  {/*{props.children}*/}
-</div>
 export default App
