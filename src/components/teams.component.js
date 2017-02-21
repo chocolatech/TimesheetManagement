@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import '../styles/sideNav.css';
 import '../styles/teams.css';
 import '../../node_modules/font-awesome/css/font-awesome.css';
@@ -8,9 +9,12 @@ export default class Teams extends Component {
         return (
             <div>
                 <h3 className="blue-font">Your teams</h3>
-                <h3 className="pull-right add-team-button"><i className="fa fa-plus-square" aria-hidden="true"></i>
-                    <label htmlFor="add-team-button">ADD TEAM</label>
-                </h3>
+                <Link to='/add_team'>
+                    <h3 className="pull-right add-team-button">
+                        <i className="fa fa-plus-square" aria-hidden="true"></i>
+                        <label htmlFor="add-team-button">ADD TEAM</label>
+                    </h3>
+                </Link>
                 <div>
                     <table className="table table-striped table-hover">
                         <thead className="table-header">
