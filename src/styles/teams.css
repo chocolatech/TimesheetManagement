@@ -12,3 +12,13 @@
     top: 25px;
     right: 70px;
 }
+.delete-button {
+    color: #CF2A27;
+}
+.delete-label {
+    font-size: 8px;
+    font-weight: bolder;
+    position: relative;
+    top: 9px;
+    right: 18px;
+}

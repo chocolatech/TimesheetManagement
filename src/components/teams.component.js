@@ -9,8 +9,8 @@ export default class Teams extends Component {
             <div>
                 <h3 className="blue-font">Your teams</h3>
                 <h3 className="pull-right add-team-button"><i className="fa fa-2x fa-plus-square" aria-hidden="true"></i>
-                <label htmlFor="add-team-button">ADD TEAM</label>
-                </h3> 
+                    <label htmlFor="add-team-button">ADD TEAM</label>
+                </h3>
                 <div>
                     <table className="table table-striped table-hover">
                         <thead className="table-header">
@@ -23,7 +23,12 @@ export default class Teams extends Component {
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Column content</td>
+                                <td>Column content
+                                <span className=" delete-button pull-right">
+                                        <i className="fa fa-times-circle" aria-hidden="true"></i>
+                                        <label htmlFor="delete-button" className="delete-label">DELETE</label>
+                                    </span>
+                                </td>
                                 <td>Column content</td>
                             </tr>
                             <tr>
