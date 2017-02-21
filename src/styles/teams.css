@@ -1,3 +1,14 @@
 .table-header {
     background-color: #eee;
 }
+.add-team-button{
+    color: #FF9900;
+    margin-bottom: 40px;
+
+}
+.add-team-button label {
+    font-size: 16px;
+    position: relative;
+    top: 25px;
+    right: 70px;
+}

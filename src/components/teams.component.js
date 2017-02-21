@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import '../styles/sideNav.css';
 import '../styles/teams.css';
+import '../../node_modules/font-awesome/css/font-awesome.css';
 
 export default class Teams extends Component {
     render() {
         return (
             <div>
-                <h3 className="blue-font">Your teams</h3><br />
+                <h3 className="blue-font">Your teams</h3>
+                <h3 className="pull-right add-team-button"><i className="fa fa-2x fa-plus-square" aria-hidden="true"></i>
+                <label htmlFor="add-team-button">ADD TEAM</label>
+                </h3> 
                 <div>
                     <table className="table table-striped table-hover">
                         <thead className="table-header">
