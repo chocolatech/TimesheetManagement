@@ -15,8 +15,8 @@ export default class AddTeam extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="select" className="col-md-2 control-label">Members</label>
-                        <div className="col-md-10">
-                            <select className="form-control form-slim" id="select">
+                        <div className="col-md-8">
+                            <select className="form-control" id="select">
                                 <option>User1</option>
                                 <option>User2</option>
                                 <option>User3</option>
@@ -24,12 +24,13 @@ export default class AddTeam extends Component {
                                 <option>User5</option>
                             </select>
                         </div>
-                        <div className="form-group">
-                            <div className="col-md-1 col-md-offset-10">
-                                <button type="submit" className="btn btn-primary pull-right button-add">Add</button>
-                            </div>
+                        <div className="col-md-1">
+                            <button type="submit" className="btn btn-primary pull-right button-add">Add</button>
                         </div>
-                        <br />
+                    </div>
+
+                    <br />
+                    <div className="form-group">
                         <label htmlFor="select" className="col-md-2 control-label">Cloud (optional)</label>
                         <div className="col-md-10">
                             <select className="form-control">
@@ -41,6 +42,7 @@ export default class AddTeam extends Component {
                             </select>
                         </div>
                     </div>
+
                     <div className="form-group">
                         <div className="col-md-10 col-md-offset-2">
                             <button type="submit" className="btn btn-success button-space">Accept</button>
