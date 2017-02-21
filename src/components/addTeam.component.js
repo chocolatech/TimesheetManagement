@@ -3,8 +3,52 @@ import '../styles/sideNav.css';
 import '../styles/teams.css';
 export default class AddTeam extends Component {
     render() {
-        return(
-            <div>loolz</div>
+        return (
+            <form className="form-horizontal">
+                <fieldset>
+                    <legend className="blue-font">Add team</legend>
+                    <div className="form-group">
+                        <label htmlFor="teamName" className="col-md-2 control-label">Name of a team</label>
+                        <div className="col-md-10">
+                            <input type="text" className="form-control" id="teamName" />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="select" className="col-md-2 control-label">Members</label>
+                        <div className="col-md-10">
+                            <select className="form-control form-slim" id="select">
+                                <option>User1</option>
+                                <option>User2</option>
+                                <option>User3</option>
+                                <option>User4</option>
+                                <option>User5</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <div className="col-md-10 col-md-offset-2">
+                                <button type="submit" className="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                        <br />
+                        <label htmlFor="select" className="col-md-2 control-label">Cloud (optional)</label>
+                        <div className="col-md-10">
+                            <select className="form-control">
+                                <option>Cloud's name</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="col-md-10 col-md-offset-2">
+                            <button type="submit" className="btn btn-success button-space">Accept</button>
+                            <button type="reset" className="btn btn-primary button-space">Back</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
         )
     }
 }
