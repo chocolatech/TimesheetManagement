@@ -25,8 +25,8 @@ export default class AddTeam extends Component {
                             </select>
                         </div>
                         <div className="form-group">
-                            <div className="col-md-10 col-md-offset-2">
-                                <button type="submit" className="btn btn-primary">Add</button>
+                            <div className="col-md-1 col-md-offset-10">
+                                <button type="submit" className="btn btn-primary pull-right button-add">Add</button>
                             </div>
                         </div>
                         <br />

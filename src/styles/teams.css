@@ -33,8 +33,11 @@
     right: 14px;
 }
 .form-control.form-slim {
-    width: 60%;
+    width: 70%;
 }
 .button-space {
     margin-right: 15px;
+}
+.button-add {
+
 }
