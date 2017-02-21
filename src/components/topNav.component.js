@@ -9,7 +9,7 @@ const TopNav = () => (
       </div>
       <ul className="nav navbar-nav navbar-right">
         <li><a href="#">Hello, USERNAME!</a></li>
-        <li><Link to='/'>Log out</Link></li>
+        <li><Link to='/signin'>Log out</Link></li>
       </ul>
     </div>
   </nav>
