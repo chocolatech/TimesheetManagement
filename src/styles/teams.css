@@ -22,3 +22,13 @@
     top: 9px;
     right: 18px;
 }
+.edit-button {
+    color: #009E10;
+}
+.edit-label {
+    font-size: 8px;
+    font-weight: bolder;
+    position: relative;
+    top: 9px;
+    right: 14px;
+}

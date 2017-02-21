@@ -24,9 +24,13 @@ export default class Teams extends Component {
                             <tr>
                                 <td>1</td>
                                 <td>Column content
-                                <span className=" delete-button pull-right">
+                                    <span className=" delete-button pull-right">
                                         <i className="fa fa-times-circle" aria-hidden="true"></i>
                                         <label htmlFor="delete-button" className="delete-label">DELETE</label>
+                                    </span>
+                                    <span className=" edit-button pull-right">
+                                        <i className="fa fa-pencil-square" aria-hidden="true"></i>
+                                        <label htmlFor="edit-button" className="edit-label">EDIT</label>
                                     </span>
                                 </td>
                                 <td>Column content</td>
