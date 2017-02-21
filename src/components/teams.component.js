@@ -8,7 +8,7 @@ export default class Teams extends Component {
         return (
             <div>
                 <h3 className="blue-font">Your teams</h3>
-                <h3 className="pull-right add-team-button"><i className="fa fa-2x fa-plus-square" aria-hidden="true"></i>
+                <h3 className="pull-right add-team-button"><i className="fa fa-plus-square" aria-hidden="true"></i>
                     <label htmlFor="add-team-button">ADD TEAM</label>
                 </h3>
                 <div>
