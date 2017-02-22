@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import '../styles/sideNav.css';
+import '../styles/teams.css';
 
 export default class Timesheets extends Component {
     render() {
         return (
-            <div>
+            <div className="smaller-font">
                 <h3 className="blue-font">Your timesheets</h3>
                 <Link to='/'>
                     <h3 className="pull-right add-team-button">
