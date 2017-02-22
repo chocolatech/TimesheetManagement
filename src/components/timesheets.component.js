@@ -9,9 +9,9 @@ export default class Timesheets extends Component {
             <div className="smaller-font">
                 <h3 className="blue-font">Your timesheets</h3>
                 <Link to='/'>
-                    <h3 className="pull-right add-team-button">
-                        <i className="fa fa-plus-square" aria-hidden="true"></i>
-                        <label htmlFor="add-team-button">EXPORT TO XLS</label>
+                    <h3 className="pull-right export-button">
+                        <i className="fa fa-file-text" aria-hidden="true"></i>
+                        <label htmlFor="export-button">EXPORT TO XLS</label>
                     </h3>
                 </Link>
                 <div>

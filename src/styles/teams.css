@@ -38,3 +38,14 @@
 .smaller-font {
     font-size: smaller;
 }
+.export-button{
+    color: #CF2A27;
+    margin-bottom: 40px;
+
+}
+.export-button label {
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    right: 60px;
+}
