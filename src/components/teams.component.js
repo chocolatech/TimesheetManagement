@@ -25,9 +25,10 @@ export default class Teams extends Component {
     render() {
         var teams = [];
         for (let i = 0; i < this.state.teams.length; i++) {
+            let team = this.state.teams[i];
             teams.push(<tr key={i}>
-                <td>{this.state.teams[i].id}</td>
-                <td>{this.state.teams[i].team}
+                <td>{team.id}</td>
+                <td>{team.team}
                                     <span className=" delete-button pull-right">
                         <i className="fa fa-times-circle" aria-hidden="true"></i>
                         <label htmlFor="delete-button" className="delete-label">DELETE</label>
@@ -39,7 +40,7 @@ export default class Teams extends Component {
                         </span>
                     </Link>
                 </td>
-                <td>{this.state.teams[i].cloud}</td>
+                <td>{teams.cloud}</td>
             </tr>);
         }
 
