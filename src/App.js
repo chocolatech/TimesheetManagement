@@ -9,6 +9,7 @@ import Timesheets from './components/timesheets.component';
 import Help from './components/help.component';
 import LoginScreen from './components/loginScreen.component';
 import AddTeam from './components/addTeam.component';
+import EditTeam from './components/editTeam.component';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path='timesheets' component={Timesheets}></Route>
           <Route path='help' component={Help}></Route>
           <Route path='add_team' component={AddTeam}></Route>
+          <Route path='edit_team' component={EditTeam}></Route>
           <Route path='*' component={NotFound} />
         </Route>
       </Router>

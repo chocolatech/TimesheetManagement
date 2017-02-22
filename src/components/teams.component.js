@@ -32,10 +32,12 @@ export default class Teams extends Component {
                                         <i className="fa fa-times-circle" aria-hidden="true"></i>
                                         <label htmlFor="delete-button" className="delete-label">DELETE</label>
                                     </span>
+                                    <Link to="/edit_team">
                                     <span className=" edit-button pull-right">
                                         <i className="fa fa-pencil-square" aria-hidden="true"></i>
                                         <label htmlFor="edit-button" className="edit-label">EDIT</label>
                                     </span>
+                                    </Link>
                                 </td>
                                 <td>Column content</td>
                             </tr>
