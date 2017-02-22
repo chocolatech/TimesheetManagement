@@ -5,7 +5,44 @@ import '../styles/teams.css';
 import '../../node_modules/font-awesome/css/font-awesome.css';
 
 export default class Teams extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { teams: [] };
+    }
+
+    componentDidMount() {
+        fetch("api/teams_mockups.json")
+            .then(response => response.json())
+            .then(json => {
+                this.setState({
+                    teams: json
+                });
+            });
+    };
+
+
     render() {
+        var teams = [];
+        for (let i = 0; i < this.state.teams.length; i++) {
+            teams.push(<tr key={i}>
+                <td>{this.state.teams[i].id}</td>
+                <td>{this.state.teams[i].team}
+                                    <span className=" delete-button pull-right">
+                        <i className="fa fa-times-circle" aria-hidden="true"></i>
+                        <label htmlFor="delete-button" className="delete-label">DELETE</label>
+                    </span>
+                    <Link to="/edit_team">
+                        <span className=" edit-button pull-right">
+                            <i className="fa fa-pencil-square" aria-hidden="true"></i>
+                            <label htmlFor="edit-button" className="edit-label">EDIT</label>
+                        </span>
+                    </Link>
+                </td>
+                <td>{this.state.teams[i].cloud}</td>
+            </tr>);
+        }
+
         return (
             <div>
                 <h3 className="blue-font">Your teams</h3>
@@ -25,47 +62,7 @@ export default class Teams extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Column content
-                                    <span className=" delete-button pull-right">
-                                        <i className="fa fa-times-circle" aria-hidden="true"></i>
-                                        <label htmlFor="delete-button" className="delete-label">DELETE</label>
-                                    </span>
-                                    <Link to="/edit_team">
-                                    <span className=" edit-button pull-right">
-                                        <i className="fa fa-pencil-square" aria-hidden="true"></i>
-                                        <label htmlFor="edit-button" className="edit-label">EDIT</label>
-                                    </span>
-                                    </Link>
-                                </td>
-                                <td>Column content</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Column content</td>
-                                <td>Column content</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Column content</td>
-                                <td>Column content</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Column content</td>
-                                <td>Column content</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Column content</td>
-                                <td>Column content</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Column content</td>
-                                <td>Column content</td>
-                            </tr>
+                           {teams}
                         </tbody>
                     </table>
                 </div>
