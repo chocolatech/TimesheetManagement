@@ -49,3 +49,14 @@
     top: 20px;
     right: 60px;
 }
+.import-button{
+    color: #FF9900;
+    margin-bottom: 40px;
+
+}
+.import-button label {
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    right: 65px;
+}

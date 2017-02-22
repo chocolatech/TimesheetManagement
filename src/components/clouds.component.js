@@ -8,9 +8,9 @@ export default class Clouds extends Component {
             <div>
                 <h3 className="blue-font">Your clouds</h3>
                 <Link to='/'>
-                    <h3 className="pull-right add-team-button">
+                    <h3 className="pull-right import-button">
                         <i className="fa fa-plus-square" aria-hidden="true"></i>
-                        <label htmlFor="add-team-button">IMPORT FROM XLS</label>
+                        <label htmlFor="import-button">IMPORT FROM XLS</label>
                     </h3>
                 </Link>
                 <div>
