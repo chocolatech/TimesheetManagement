@@ -3,7 +3,37 @@ import { Link } from 'react-router';
 import '../styles/sideNav.css';
 
 export default class Clouds extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { clouds: [] };
+    }
+
+
+    componentDidMount() {
+        fetch("api/clouds_mockups.json")
+            .then(response => response.json())
+            .then(json => {
+                console.log(json);
+                this.setState({
+                    clouds: json
+                });
+                console.log(this.state);
+            });
+
+    };
+
     render() {
+        var lol = [];
+        for (let i = 0; i < this.state.clouds.length; i++) {
+            //lol.push(<span key={i}>{this.state.clouds[i].manager}</span>);
+            lol.push(<tr key={i}>
+                <td>{this.state.clouds[i].cloud}</td>
+                <td>{this.state.clouds[i].id}</td>
+                <td>{this.state.clouds[i].manager}</td>
+                <td>{this.state.clouds[i].support}</td>
+            </tr>
+            );
+        }
         return (
             <div>
                 <h3 className="blue-font">Your clouds</h3>
@@ -24,24 +54,7 @@ export default class Clouds extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
+                           {lol}
                         </tbody>
                     </table>
                 </div>
