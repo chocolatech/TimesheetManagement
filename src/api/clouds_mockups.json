@@ -1,0 +1,16 @@
+[{
+  "id": 1,
+  "cloud": "BILLENNIUM_Tibco_GS_2016",
+  "manager": "Jonak Artur",
+  "support": "BILLEN_IDW_GS_2016"
+},{
+  "id": 2,
+  "cloud": "BILEN_EAI_PDPT_2016",
+  "manager": "Jonak Artur",
+  "support": "BILEN_EAI_PDPT_2016"
+},{
+  "id": 3,
+  "cloud": "BILEN_EAI_PDPT_2016",
+  "manager": "Maciej Buczek",
+  "support": "BILEN_EAI_PDPT_2016"
+}]
