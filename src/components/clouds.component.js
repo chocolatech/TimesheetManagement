@@ -8,7 +8,6 @@ export default class Clouds extends Component {
         this.state = { clouds: [] };
     }
 
-
     componentDidMount() {
         fetch("api/clouds_mockups.json")
             .then(response => response.json())
@@ -23,10 +22,10 @@ export default class Clouds extends Component {
     };
 
     render() {
-        var lol = [];
+        var clouds = [];
         for (let i = 0; i < this.state.clouds.length; i++) {
             //lol.push(<span key={i}>{this.state.clouds[i].manager}</span>);
-            lol.push(<tr key={i}>
+            clouds.push(<tr key={i}>
                 <td>{this.state.clouds[i].cloud}</td>
                 <td>{this.state.clouds[i].id}</td>
                 <td>{this.state.clouds[i].manager}</td>
@@ -54,7 +53,7 @@ export default class Clouds extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                           {lol}
+                           {clouds}
                         </tbody>
                     </table>
                 </div>
