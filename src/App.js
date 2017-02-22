@@ -11,6 +11,7 @@ import LoginScreen from './components/loginScreen.component';
 import AddTeam from './components/addTeam.component';
 import EditTeam from './components/editTeam.component';
 
+
 class App extends Component {
   render() {
     return (
