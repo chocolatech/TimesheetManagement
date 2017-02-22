@@ -24,12 +24,13 @@ export default class Clouds extends Component {
     render() {
         var clouds = [];
         for (let i = 0; i < this.state.clouds.length; i++) {
+            let cloud = this.state.clouds[i];
             //lol.push(<span key={i}>{this.state.clouds[i].manager}</span>);
             clouds.push(<tr key={i}>
-                <td>{this.state.clouds[i].cloud}</td>
-                <td>{this.state.clouds[i].id}</td>
-                <td>{this.state.clouds[i].manager}</td>
-                <td>{this.state.clouds[i].support}</td>
+                <td>{cloud.cloud}</td>
+                <td>{cloud.id}</td>
+                <td>{cloud.manager}</td>
+                <td>{cloud.support}</td>
             </tr>
             );
         }
