@@ -40,7 +40,7 @@ export default class Teams extends Component {
                         </span>
                     </Link>
                 </td>
-                <td>{teams.cloud}</td>
+                <td>{team.cloud}</td>
             </tr>);
         }
 
