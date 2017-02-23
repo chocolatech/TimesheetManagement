@@ -4,7 +4,47 @@ import '../styles/sideNav.css';
 import '../styles/teams.css';
 
 export default class Timesheets extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { timesheets: [] };
+    }
+
+    componentDidMount() {
+        fetch("api/timesheets_mockups.json")
+            .then(response => response.json())
+            .then(json => {
+                this.setState({
+                    timesheets: json
+                });
+            });
+    };
+
     render() {
+        var timesheets = [];
+        for (let i = 0; i < this.state.timesheets.length; i++) {
+            let timesheet = this.state.timesheets[i];
+            timesheets.push(<tr key={i}>
+                <td>{timesheet.person}</td>
+                <td>{timesheet.cloud}</td>
+                <td>{timesheet.manager}</td>
+                <td>{timesheet.contractor}</td>
+                <td>{timesheet.resourceSupport}</td>
+                <td>{timesheet.order}</td>
+                <td>{timesheet.week}</td>
+                <td>{timesheet.month}</td>
+                <td>{timesheet.year}</td>
+                <td>{timesheet.expected}</td>
+                <td>{timesheet.regular}</td>
+                <td>{timesheet.correction}</td>
+                <td>{timesheet.unavailability}</td>
+                <td>{timesheet.onCallDuty}</td>
+                <td>{timesheet.duty}</td>
+                <td>{timesheet.onCallWork}</td>
+                <td>{timesheet.subactivity}</td>
+                <td>{timesheet.status}</td>
+            </tr>);
+        }
         return (
             <div className="smaller-font">
                 <h3 className="blue-font">Your timesheets</h3>
@@ -20,12 +60,16 @@ export default class Timesheets extends Component {
                             <tr>
                                 <th>Person</th>
                                 <th>Cloud</th>
+                                <th>Manager</th>
+                                <th>Contractor</th>
+                                <th>Resource Support</th>
+                                <th>Order</th>
                                 <th>Week</th>
                                 <th>Month</th>
                                 <th>Year</th>
                                 <th>Expected</th>
                                 <th>Regular</th>
-                                <th>Collection</th>
+                                <th>Correction</th>
                                 <th>Unavailability</th>
                                 <th>On-Call Duty (Non Holidays)</th>
                                 <th>On-Call Duty (Holidays)</th>
@@ -35,24 +79,7 @@ export default class Timesheets extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud</td>
-                                <td>Order</td>
-                                <td>Anonymous</td>
-                                <td>Anonymous</td>
-                            </tr>
+                            {timesheets}
                         </tbody>
                     </table>
                 </div>
