@@ -54,34 +54,36 @@ export default class Timesheets extends Component {
                         <label htmlFor="export-button">EXPORT TO XLS</label>
                     </h3>
                 </Link>
-                <div>
-                    <table className="table table-striped table-hover">
-                        <thead className="table-header">
-                            <tr>
-                                <th>Person</th>
-                                <th>Cloud</th>
-                                <th>Manager</th>
-                                <th>Contractor</th>
-                                <th>Resource Support</th>
-                                <th>Order</th>
-                                <th>Week</th>
-                                <th>Month</th>
-                                <th>Year</th>
-                                <th>Expected</th>
-                                <th>Regular</th>
-                                <th>Correction</th>
-                                <th>Unavailability</th>
-                                <th>On-Call Duty (Non Holidays)</th>
-                                <th>On-Call Duty (Holidays)</th>
-                                <th>On-Call Work</th>
-                                <th>Subactivity</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {timesheets}
-                        </tbody>
-                    </table>
+                <div className="col-md-12">
+                    <div className="table-responsive">
+                        <table className="table table-striped table-hover">
+                            <thead className="table-header">
+                                <tr>
+                                    <th>Person</th>
+                                    <th>Cloud</th>
+                                    <th>Manager</th>
+                                    <th>Contractor</th>
+                                    <th>Resource Support</th>
+                                    <th>Order</th>
+                                    <th>Week</th>
+                                    <th>Month</th>
+                                    <th>Year</th>
+                                    <th>Expected</th>
+                                    <th>Regular</th>
+                                    <th>Correction</th>
+                                    <th>Unavailability</th>
+                                    <th>On-Call Duty (Non Holidays)</th>
+                                    <th>On-Call Duty (Holidays)</th>
+                                    <th>On-Call Work</th>
+                                    <th>Subactivity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {timesheets}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         )
